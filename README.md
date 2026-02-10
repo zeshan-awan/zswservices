@@ -5,6 +5,7 @@ A modern, SEO-friendly courier and logistics website built with **Next.js 14**, 
 ## 🚀 Features
 
 ### Public Features
+
 - **Home Page**: Hero section with shipment tracking, statistics, services showcase
 - **Tracking System**: Advanced tracking modal to check shipment status in real-time
 - **About Us**: Company history, mission, vision, and core values
@@ -16,6 +17,7 @@ A modern, SEO-friendly courier and logistics website built with **Next.js 14**, 
 - **SEO Optimized**: Meta tags, structured data, fast loading
 
 ### Admin Panel Features
+
 - **Admin Login**: Secure login page (Email: admin@test.com, Password: 12345678)
 - **Dashboard**: Complete admin panel for shipment management
 - **Create Shipments**: Form to create new shipments with auto-generated tracking IDs
@@ -35,6 +37,7 @@ A modern, SEO-friendly courier and logistics website built with **Next.js 14**, 
 ## 📋 Prerequisites
 
 Before running this project, make sure you have:
+
 - Node.js 16+ installed
 - npm or yarn package manager
 - Firebase project already created (using provided config)
@@ -42,17 +45,22 @@ Before running this project, make sure you have:
 ## 🚀 Getting Started
 
 ### 1. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 2. Configure Firebase
+
 Firebase config is already set up in `lib/firebase.ts`. The provided credentials are:
+
 - Project ID: `zcs-transport`
 - Firebase API: Already configured
 
 ### 3. Firestore Rules
+
 Set up your Firestore security rules as provided:
+
 ```
 rules_version = '2';
 
@@ -66,6 +74,7 @@ service cloud.firestore {
 ```
 
 ### 4. Run Development Server
+
 ```bash
 npm run dev
 ```
@@ -75,6 +84,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## 📱 Pages & Routes
 
 ### Public Pages
+
 - `/` - Home page with tracking system
 - `/about` - About the company
 - `/domestic` - Domestic services
@@ -82,6 +92,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - `/contact` - Contact form
 
 ### Admin Pages
+
 - `/admin` - Admin login page
   - Credentials: `admin@test.com` / `12345678`
 - `/admin/dashboard` - Admin dashboard (shipment management)
@@ -89,6 +100,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## 📊 Firestore Collections
 
 ### 1. `shipments` Collection
+
 ```json
 {
   "trackingId": "ZWS12345678",
@@ -106,6 +118,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ```
 
 ### 2. `contacts` Collection
+
 ```json
 {
   "name": "Customer Name",
@@ -116,6 +129,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ```
 
 ### 3. `newsletter` Collection
+
 ```json
 {
   "email": "subscriber@email.com",
@@ -126,6 +140,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## 🔐 Admin Credentials
 
 Default admin credentials (for demo purposes):
+
 - **Email**: `admin@test.com`
 - **Password**: `12345678`
 
@@ -134,7 +149,9 @@ Default admin credentials (for demo purposes):
 ## 🎨 Customization
 
 ### Colors
+
 Primary color is set to `#e30613` (red). To change:
+
 1. Update in `tailwind.config.js`:
    ```js
    colors: {
@@ -144,12 +161,15 @@ Primary color is set to `#e30613` (red). To change:
 2. Update in `app/globals.css` if needed
 
 ### Logo & Branding
+
 - Change logo text in `components/Navbar.tsx`
 - Add your logo images in `public/` folder
 - Update company name throughout the app
 
 ### Contact Information
+
 Update in `components/Footer.tsx`:
+
 - Address
 - Phone numbers
 - Social media links
@@ -165,13 +185,16 @@ npm start
 ## 🌐 Deployment
 
 ### Deploy to Vercel (Recommended)
+
 ```bash
 npm i -g vercel
 vercel
 ```
 
 ### Deploy to Other Platforms
+
 This is a standard Next.js app, so it can be deployed to:
+
 - Netlify
 - AWS Amplify
 - DigitalOcean
@@ -188,6 +211,7 @@ This is a standard Next.js app, so it can be deployed to:
 ## 📝 Features in Detail
 
 ### Tracking System
+
 1. Users enter tracking ID in hero section
 2. System fetches shipment from Firestore
 3. Professional modal shows all details:
@@ -198,6 +222,7 @@ This is a standard Next.js app, so it can be deployed to:
    - Order date and estimated delivery
 
 ### Admin Panel
+
 1. Secure login with hardcoded credentials
 2. Success popup on login
 3. Dashboard shows all shipments in a table
@@ -208,11 +233,13 @@ This is a standard Next.js app, so it can be deployed to:
 8. Real-time data refresh
 
 ### Contact Form
+
 - Saves name, email, message to Firebase
 - Success/error feedback
 - Validation built-in
 
 ### Newsletter
+
 - Email subscription in footer
 - Saves emails to Firebase
 - Real-time success message
@@ -220,16 +247,19 @@ This is a standard Next.js app, so it can be deployed to:
 ## 🐛 Troubleshooting
 
 ### Firebase Connection Issues
+
 - Verify Firebase config in `lib/firebase.ts`
 - Check Firestore rules aren't blocking read/write
 - Ensure browser allows third-party scripts
 
 ### Tracking Not Working
+
 - Make sure shipments exist in Firestore
 - Check tracking ID format (ZWS + 8 digits)
 - Verify Firestore rules allow read access
 
 ### Admin Login Issues
+
 - Email must be exactly: `admin@test.com`
 - Password must be exactly: `12345678`
 - Clear localStorage to reset session
@@ -237,6 +267,7 @@ This is a standard Next.js app, so it can be deployed to:
 ## 📞 Support
 
 For issues or questions:
+
 1. Check Firestore console for data
 2. Review browser console for errors
 3. Verify Firebase config

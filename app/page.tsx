@@ -192,7 +192,7 @@ export default function Home() {
                 className="rounded-lg object-cover w-full h-64"
               />
               <img
-                src="https://images.unsplash.com/photo-1516534775068-bb57ce32cb20?w=500&h=500&fit=crop"
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop"
                 alt="Customer Support - Service"
                 className="rounded-lg object-cover w-full h-64"
               />
@@ -242,7 +242,7 @@ export default function Home() {
             {/* Card 1 - Training and Development */}
             <div className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop"
+                src="/images/romeosessions-packages-6153947_1280.jpg"
                 alt="Training and Development"
                 className="w-full h-80 object-cover group-hover:scale-105 transition duration-300"
               />
@@ -255,7 +255,7 @@ export default function Home() {
             {/* Card 2 - Employee Culture */}
             <div className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop"
+                src="/images/imageabout1.jpg"
                 alt="Employee Culture"
                 className="w-full h-80 object-cover group-hover:scale-105 transition duration-300"
               />
@@ -268,7 +268,7 @@ export default function Home() {
             {/* Card 3 - Employee Benefits */}
             <div className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop"
+                src="/images/tungart7-box-8598084_1280.jpg"
                 alt="Employee Benefits"
                 className="w-full h-80 object-cover group-hover:scale-105 transition duration-300"
               />

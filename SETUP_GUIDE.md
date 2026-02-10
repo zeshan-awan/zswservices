@@ -7,6 +7,7 @@ Your ZWS Courier website has been completely converted from static HTML to a mod
 ### ✅ Completed Features
 
 #### 1. **Core Pages**
+
 - ✓ Home page with hero slider and tracking system
 - ✓ About Us page with company mission and values
 - ✓ Domestic Services page
@@ -15,6 +16,7 @@ Your ZWS Courier website has been completely converted from static HTML to a mod
 - ✓ Professional, responsive design
 
 #### 2. **Admin Panel**
+
 - ✓ Secure admin login page
   - Email: `admin@test.com`
   - Password: `12345678`
@@ -26,6 +28,7 @@ Your ZWS Courier website has been completely converted from static HTML to a mod
 - ✓ Delete shipments
 
 #### 3. **Firebase Integration**
+
 - ✓ Firestore database setup
 - ✓ Real-time data storage
 - ✓ Three main collections:
@@ -34,6 +37,7 @@ Your ZWS Courier website has been completely converted from static HTML to a mod
   - `newsletter` - Email subscriptions
 
 #### 4. **Advanced Features**
+
 - ✓ Shipment tracking modal in hero section
 - ✓ Professional tracking details display
 - ✓ Contact form with validation (saves to Firebase)
@@ -88,27 +92,32 @@ zswprojectfile/
 ## 🚀 Installation & Running
 
 ### Step 1: Install Dependencies
+
 ```bash
 cd d:\zswprojectfile
 npm install
 ```
 
 ### Step 2: Run Development Server
+
 ```bash
 npm run dev
 ```
 
 ### Step 3: Open in Browser
+
 Navigate to: **http://localhost:3000**
 
 ## 🔑 Admin Panel Access
 
 ### Login Details
+
 - **URL**: http://localhost:3000/admin
 - **Email**: `admin@test.com`
 - **Password**: `12345678`
 
 ### What You Can Do
+
 1. **Create Shipments**
    - Click "Create New Shipment" button
    - Fill in sender & recipient details
@@ -132,10 +141,13 @@ Navigate to: **http://localhost:3000**
 ## 📊 Firestore Setup
 
 ### Collections Created
+
 When you use the app, the following collections will be created:
 
 #### 1. **shipments**
+
 Storage for all shipments created in admin panel
+
 - Unique tracking ID
 - Sender & recipient info
 - Shipment details
@@ -143,20 +155,25 @@ Storage for all shipments created in admin panel
 - Timestamps
 
 #### 2. **contacts**
+
 Storage for messages from contact form
+
 - Customer name
 - Email
 - Message content
 - Timestamp
 
 #### 3. **newsletter**
+
 Storage for newsletter subscriptions
+
 - Email address
 - Subscription timestamp
 
 ## 🛠️ Key Files to Know
 
 ### Important Files
+
 1. **lib/firebase.ts** - Firebase configuration (don't modify unless you have a new Firebase project)
 2. **components/Navbar.tsx** - Navigation menu, add admin link here if needed
 3. **components/Footer.tsx** - Newsletter subscription, update social links
@@ -164,6 +181,7 @@ Storage for newsletter subscriptions
 5. **app/admin/dashboard/page.tsx** - Admin shipment management
 
 ### Configuration Files
+
 - `tailwind.config.js` - Change primary color (#e30613) here
 - `next.config.js` - Image and Next.js settings
 - `.env.local` - Environment variables (already has admin credentials)
@@ -171,7 +189,9 @@ Storage for newsletter subscriptions
 ## 🎨 Customization
 
 ### Change Primary Color
+
 Edit `tailwind.config.js`:
+
 ```js
 colors: {
   primary: '#e30613',  // Change this to your color
@@ -179,23 +199,29 @@ colors: {
 ```
 
 ### Change Company Name
+
 Search for "ZWS Courier" and replace with your company name in:
+
 - `components/Navbar.tsx`
 - `components/Footer.tsx`
 - `app/layout.tsx` (metadata)
 
 ### Update Contact Information
+
 Edit `components/Footer.tsx`:
+
 - Address
 - Social media links
 - Email
 
 ### Change Hero Images
+
 Edit `app/page.tsx` - replace image URLs
 
 ## 📱 Testing Tracking Feature
 
 ### How to Test
+
 1. Login to admin panel
 2. Create a shipment
 3. Note the tracking ID (shown in success message)
@@ -207,6 +233,7 @@ Edit `app/page.tsx` - replace image URLs
 ## ✨ SEO Features
 
 The site is optimized for SEO:
+
 - ✓ Meta tags and descriptions
 - ✓ Open Graph tags
 - ✓ Semantic HTML
@@ -218,6 +245,7 @@ The site is optimized for SEO:
 ## 🔒 Security Note
 
 ⚠️ **Before deploying to production:**
+
 1. Change admin credentials in `app/admin/page.tsx`
 2. Move Firebase config to environment variables
 3. Update Firestore security rules
@@ -234,12 +262,14 @@ npm start
 ## 🌐 Deployment Options
 
 ### Deploy to Vercel (Easiest)
+
 ```bash
 npm i -g vercel
 vercel
 ```
 
 ### Deploy to Other Platforms
+
 - Netlify
 - AWS Amplify
 - Railway
@@ -249,26 +279,34 @@ vercel
 ## 🐛 Common Issues & Solutions
 
 ### Issue: "Cannot find module 'firebase'"
+
 **Solution**: Run `npm install` again
+
 ```bash
 npm install firebase
 ```
 
 ### Issue: Admin login not working
-**Solution**: 
+
+**Solution**:
+
 - Clear browser cache
 - Check email is exactly: `admin@test.com`
 - Check password is exactly: `12345678`
 - Check browser console for errors
 
 ### Issue: Tracking not working
+
 **Solution**:
+
 - Create a shipment first in admin panel
 - Use the tracking ID from success message
 - Check Firestore has the shipment data
 
 ### Issue: Images not loading
+
 **Solution**:
+
 - Check internet connection
 - Unsplash/Picsum might be blocked in your region
 - Replace URLs in code with local images
@@ -276,6 +314,7 @@ npm install firebase
 ## 📞 Quick Reference
 
 ### Important URLs
+
 - Home: http://localhost:3000
 - Admin Login: http://localhost:3000/admin
 - Admin Dashboard: http://localhost:3000/admin/dashboard (after login)
@@ -285,6 +324,7 @@ npm install firebase
 - Express: http://localhost:3000/express
 
 ### Important Terminal Commands
+
 ```bash
 npm install        # Install dependencies
 npm run dev        # Start development server
@@ -296,13 +336,16 @@ npm run lint       # Check code style
 ## 🎓 Learning Resources
 
 ### Next.js
+
 - [Official Docs](https://nextjs.org/docs)
 - [App Router Guide](https://nextjs.org/docs/app)
 
 ### Firebase
+
 - [Firestore Docs](https://firebase.google.com/docs/firestore)
 
 ### Tailwind CSS
+
 - [Official Docs](https://tailwindcss.com/docs)
 
 ## ✅ Checklist for First Use
@@ -321,6 +364,7 @@ npm run lint       # Check code style
 ## 🎉 You're Ready!
 
 Your ZWS Courier website is now a modern, professional Next.js application with:
+
 - Fast performance
 - SEO optimization
 - Real-time database
