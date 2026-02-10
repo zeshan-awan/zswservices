@@ -175,6 +175,112 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Customer Support Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Image Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop"
+                alt="Customer Support - Team"
+                className="rounded-lg object-cover w-full h-64"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop"
+                alt="Customer Support - Call Center"
+                className="rounded-lg object-cover w-full h-64"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1516534775068-bb57ce32cb20?w=500&h=500&fit=crop"
+                alt="Customer Support - Service"
+                className="rounded-lg object-cover w-full h-64"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1516534775068-bb57ce32cb20?w=500&h=500&fit=crop"
+                alt="Customer Support - WhatsApp"
+                className="rounded-lg object-cover w-full h-64"
+              />
+            </div>
+
+            {/* Right Column - Content */}
+            <div>
+              <h2 className="text-4xl font-bold mb-4 text-gray-900">Customer Support</h2>
+              <div className="w-12 h-1 bg-primary rounded-full mb-6"></div>
+              
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                At ZWS Courier, we believe that exceptional customer support is the backbone of our service. Our dedicated call centers operate round-the-clock to handle your inquiries and resolve issues promptly. 
+              </p>
+              
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                We offer multiple support channels including traditional phone support, WhatsApp messaging for quick updates, and active engagement on social media platforms. Our trained customer service representatives are ready to assist you with tracking, billing, claims, and general inquiries.
+              </p>
+
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Whether you prefer voice calls, text messages, or instant chat, we're here to ensure your shipping experience is smooth and worry-free.
+              </p>
+
+              <button className="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-red-700 transition duration-300">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Working With ZWS Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="container mx-auto max-w-7xl">
+          {/* Centered Heading */}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Working With ZWS</h2>
+            <div className="w-16 h-1 bg-primary rounded-full mx-auto"></div>
+          </div>
+
+          {/* Three Column Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1 - Training and Development */}
+            <div className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop"
+                alt="Training and Development"
+                className="w-full h-80 object-cover group-hover:scale-105 transition duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-6">
+                <h3 className="text-2xl font-bold text-white">Training and Development</h3>
+              </div>
+            </div>
+
+            {/* Card 2 - Employee Culture */}
+            <div className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop"
+                alt="Employee Culture"
+                className="w-full h-80 object-cover group-hover:scale-105 transition duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-6">
+                <h3 className="text-2xl font-bold text-white">Employee Culture</h3>
+              </div>
+            </div>
+
+            {/* Card 3 - Employee Benefits */}
+            <div className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop"
+                alt="Employee Benefits"
+                className="w-full h-80 object-cover group-hover:scale-105 transition duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-6">
+                <h3 className="text-2xl font-bold text-white">Employee Benefits</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
 
       {/* Tracking Modal */}
