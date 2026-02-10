@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZWS Courier Service</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-flex">
+    <h2 class="logo">ZWS Courier</h2>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="domestic.html">Domestic</a>
+      <a href="express.html">Express</a>
+      <a href="contact.html">Contact</a>
+      <button class="btn" type="button">ZSW</button>
+    </nav>
+
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+<!-- NEWS TICKER -->
+<div class="news-ticker">
+  <div class="ticker-track">
+    <span>🚚 New Express Routes Launched Nationwide</span>
+    <span>📦 Same Day Delivery Available in Major Cities</span>
+    <span>💼 New Logistics Partnerships Announced</span>
+    <span>📢 ZWS Courier Expands International Shipping</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero-slider">
+  <div class="slider">
+    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d');"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d1');"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1592838064575-70ed626d3a0e');"></div>
+  </div>
+
+  <div class="hero-content">
+    <h1>Track Your Shipment</h1>
+    <div class="tracking-box">
+      <input type="text" placeholder="Enter Tracking ID" />
+      <button type="button">Track Shipment</button>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products reveal">
+  <h2>Products & Services</h2>
+  <div class="grid">
+    <div class="product-card"><i class="fa fa-truck"></i><h4>Domestic</h4></div>
+    <div class="product-card"><i class="fa fa-globe"></i><h4>International</h4></div>
+    <div class="product-card"><i class="fa fa-cart-shopping"></i><h4>E-Commerce</h4></div>
+    <div class="product-card"><i class="fa fa-plane"></i><h4>Aviation</h4></div>
+    <div class="product-card"><i class="fa fa-gear"></i><h4>Financial Services</h4></div>
+    <div class="product-card"><i class="fa fa-envelope"></i><h4>Mailroom</h4></div>
+  </div>
+   
+</section>
+
+<!-- SERVICES -->
+<section class="service-bar reveal">
+ 
+  <div class="container icon-grid">
+     
+    
+    <div><i class="fa fa-clock"></i><p>Same Day Delivery</p></div>
+    <div><i class="fa fa-box"></i><p>Special Handling</p></div>
+    <div><i class="fa fa-money-bill"></i><p>Fee Payment</p></div>
+    <div><i class="fa fa-shield"></i><p>Insurance</p></div>
+    <div><i class="fa fa-mobile"></i><p>Mobile Topup</p></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section reveal">
+  <h1>At a Glance</h1>
+  <div class="underline"></div>
+
+  <div class="stats">
+    <div class="stat-card"><h2 class="counter" data-target="40">0</h2><p>Years of Excellence</p></div>
+    <div class="stat-card"><h2 class="counter" data-target="1000">0</h2><p>Express Centres</p></div>
+    <div class="stat-card"><h2 class="counter" data-target="4000">0</h2><p>Nationwide Couriers</p></div>
+    <div class="stat-card"><h2 class="counter" data-target="9000">0</h2><p>ECOM Merchants</p></div>
+  </div>
+</section>
+
+<!-- CSR -->
+<section class="csr reveal">
+  <div class="csr-text">
+    <h2>CSR Activities in Pakistan</h2>
+    <p>Helping society and communities through logistics support.</p>
+  </div>
+
+  <div class="csr-slider">
+    <img id="sliderImage" src="https://picsum.photos/500/320?1" alt="CSR" />
+    <div class="slider-controls">
+      <span id="prev">‹</span>
+      <span id="next">›</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4>Company Information</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Mission & Core Values</a></li>
+        <li><a href="#">Leadership</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Product & Services</h4>
+      <ul>
+        <li><a href="#">Express</a></li>
+        <li><a href="#">Logistics</a></li>
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">Promotions</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Head Office</h4>
+      <p>
+        101-104<br />
+        Civil Aviation Club Road<br />
+        Karachi 75202, Pakistan
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Signup for Updates</h4>
+      <div class="signup-box">
+        <input type="email" id="email" placeholder="Enter your email" />
+        <button onclick="subscribe()" type="button">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+      </div>
+
+      <h4 class="follow-title">Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>2025 © ZWS Courier Services. All rights reserved.</p>
+    <div class="bottom-links">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">FAQs</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
